@@ -1,0 +1,9 @@
+export { Navbar } from "./Navbar";
+export { Hero } from "./Hero";
+export { Features } from "./Features";
+export { Compliance } from "./Compliance";
+export { Stats } from "./Stats";
+export { WhyBCore } from "./WhyBCore";
+export { Pricing } from "./Pricing";
+export { CTA } from "./CTA";
+export { Footer } from "./Footer";
