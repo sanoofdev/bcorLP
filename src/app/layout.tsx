@@ -20,10 +20,10 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "BCOR ERP | Business Management Made Simple",
-description: "Billing, inventory, purchases, and accounting — all in one powerful desktop system built for small businesses.",
+  title: "Pharmacy Billing Software in India | GST Ready | BCOR ERP",
+  description:
+    "Best pharmacy billing software with GST billing, inventory management, barcode scanning and accounting. Designed for medical shops and pharmacies in India.",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
