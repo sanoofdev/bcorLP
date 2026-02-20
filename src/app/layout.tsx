@@ -21,7 +21,7 @@ const orbitron = Orbitron({
 
 export const metadata: Metadata = {
   title: "BCOR ERP | Business Management Made Simple",
-  description: "Billing, inventory, purchases, and accounting — all in one powerful desktop system built for small businesses.",
+description: "Billing, inventory, purchases, and accounting — all in one powerful desktop system built for small businesses.",
 };
 
 export default function RootLayout({
