@@ -1,21 +1,67 @@
-export const metadata = {
-  title: "Pharmacy Billing Software India | BCOR",
-  description:
-    "BCOR is the best pharmacy billing software in India with GST billing, inventory management and Schedule H1 compliance.",
-};
+import {
+  Navbar,
+  Hero,
+  Features,
+  Compliance,
+  Stats,
+  WhyBCore,
+  Pricing,
+  CTA,
+  Footer,
+} from "@/components/landing";
 
-export default function Page() {
+export default function Home() {
   return (
-    <div className="max-w-5xl mx-auto py-12 px-6">
-      <h1 className="text-4xl font-bold mb-6">
-        Pharmacy Billing Software in India
-      </h1>
+    <main className="min-h-screen pb-16 sm:pb-0">
+      <Navbar />
+      <Hero />
+      <Features />
+      <Compliance />
+      <Stats />
+      <WhyBCore />
+      <Pricing />
+      <CTA />
 
-      <p className="mb-4">
-        BCOR Pharmacy Billing Software helps medical shops and pharmacies
-        manage GST billing, stock control, expiry tracking and compliance
-        efficiently.
-      </p>
-    </div>
+      {/* SEO Internal Links Section */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <h2 className="text-3xl font-bold mb-6 text-center">
+          Pharmacy Software Solutions
+        </h2>
+
+        <ul className="grid md:grid-cols-2 gap-4 text-lg">
+          <li>
+            <a href="/pharmacy-billing-software-india" className="text-blue-600 hover:underline">
+              Pharmacy Billing Software in India
+            </a>
+          </li>
+
+          <li>
+            <a href="/gst-pharmacy-software" className="text-blue-600 hover:underline">
+              GST Pharmacy Software
+            </a>
+          </li>
+
+          <li>
+            <a href="/pharmacy-inventory-management" className="text-blue-600 hover:underline">
+              Pharmacy Inventory Management Software
+            </a>
+          </li>
+
+          <li>
+            <a href="/medical-shop-billing-software" className="text-blue-600 hover:underline">
+              Medical Shop Billing Software
+            </a>
+          </li>
+
+          <li>
+            <a href="/pharmacy-software-kerala" className="text-blue-600 hover:underline">
+              Pharmacy Software in Kerala
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <Footer />
+    </main>
   );
 }
