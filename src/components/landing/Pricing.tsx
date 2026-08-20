@@ -99,7 +99,7 @@ export function Pricing() {
                             {/* Inclusions */}
                             <div className="mb-6">
                                 <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-3">
-                                    What's Included
+                                    What&apos;s Included
                                 </p>
                                 <div className="space-y-2">
                                     {inclusions.map((item) => (
@@ -129,7 +129,7 @@ export function Pricing() {
                                                 1 Year Free Support Included
                                             </span>
                                             <p className="text-slate-500 text-xs mt-0.5">
-                                                Phone support, setup assistance & issue resolution
+                                                Phone support, setup assistance &amp; issue resolution
                                             </p>
                                         </div>
                                     </div>
@@ -140,7 +140,7 @@ export function Pricing() {
                                                 Optional Annual AMC
                                             </span>
                                             <p className="text-slate-500 text-xs mt-0.5">
-                                                Continued support & maintenance. No forced renewal.
+                                                Continued support &amp; maintenance. No forced renewal.
                                             </p>
                                         </div>
                                     </div>
@@ -151,16 +151,18 @@ export function Pricing() {
                             <div className="space-y-3">
                                 <a
                                     href="tel:+917994184506"
+                                    aria-label="Call sales to understand licensing details"
                                     className="w-full py-3.5 sm:py-4 bg-teal-600 text-white font-semibold rounded-xl hover:bg-teal-700 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
                                 >
                                     <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                                    Call to Understand Licensing
+                                    Call to Understand Licensing (+91 7994184506)
                                 </a>
                                 <a
-                                    href="#demo"
+                                    href="#features"
+                                    aria-label="Explore all ERP features"
                                     className="w-full py-3 text-slate-700 font-medium rounded-xl border border-slate-200 hover:bg-slate-50 transition-colors flex items-center justify-center text-sm sm:text-base"
                                 >
-                                    Get Free Demo
+                                    Explore Core Features
                                 </a>
                             </div>
                         </div>

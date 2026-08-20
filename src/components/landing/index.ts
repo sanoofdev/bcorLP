@@ -7,3 +7,5 @@ export { WhyBCore } from "./WhyBCore";
 export { Pricing } from "./Pricing";
 export { CTA } from "./CTA";
 export { Footer } from "./Footer";
+export { LeadForm } from "./LeadForm";
+export { WhatsAppButton } from "./WhatsAppButton";

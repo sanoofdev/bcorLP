@@ -1,0 +1,39 @@
+# BCOR ERP — Pharmacy Management & Billing Software
+
+> BCOR ERP is an offline-first Windows desktop pharmacy billing and inventory management software built exclusively for Indian retail chemists, medical shops, and hospital pharmacies.
+
+## Core Summary
+- **Product Name:** BCOR ERP (B-Core Pharmacy Software)
+- **Primary Website:** https://bcor.in
+- **Operating Platform:** Windows 10, Windows 11 (Native Desktop Application)
+- **Architecture:** 100% Offline-First Engine with Local Database and Automatic Cloud Sync
+- **Pricing Model:** One-Time Lifetime License (Zero Monthly / Annual Subscription Fees)
+- **Target Geography:** India (Specialized compliance for all Indian States, including Kerala State Drugs Control)
+- **Sales & Support Hotline:** +91 7994184506 / +91 9847434096
+- **Support Email:** support@bcor.in
+
+## Key Features & Capabilities
+1. **Lightning-Fast Billing:** Sub-2-second counter checkout with keyboard-first shortcuts and barcode scanning.
+2. **GST Invoicing & Returns:** Auto-calculates CGST, SGST, IGST, provides HSN code directory, and generates 1-click GSTR-1 & GSTR-3B Excel/JSON exports.
+3. **FEFO Expiry & Batch Control:** Enforces First-Expiry-First-Out dispensing logic with 30/60/90-day early expiry loss warnings.
+4. **Drug Inspection Compliance:** Auto-maintains statutory registers for Schedule H, Schedule H1, and Narcotic medications with prescribing doctor and patient logs.
+5. **Distributor Purchase Import:** Direct digital import for distributor invoices to eliminate manual stock entry.
+6. **Hardware Compatibility:** Works with 2-inch/3-inch thermal POS receipt printers, A4/A5 laser printers, and 1D/2D barcode scanners.
+7. **Patient Refill Records:** Tracks chronic patient prescription histories (diabetes, hypertension) and sends WhatsApp PDF invoices.
+
+## Licensing & Support
+- **Purchase Type:** One-time perpetual software license.
+- **Counters & Users:** Unlimited billing counters and users on local LAN.
+- **Included Support:** 1 Year free dedicated telephone, WhatsApp, and remote assistance.
+- **Annual Maintenance:** Optional AMC for continued support; no forced software shut-off.
+
+## Key URLs
+- Homepage: https://bcor.in
+- Nationwide Pillar: https://bcor.in/pharmacy-billing-software-india
+- Pricing Details: https://bcor.in/pricing
+- GST Billing Module: https://bcor.in/gst-pharmacy-software
+- Inventory & Expiry Control: https://bcor.in/pharmacy-inventory-management
+- Retail Chemist POS: https://bcor.in/medical-shop-billing-software
+- Kerala Regional Edition: https://bcor.in/pharmacy-software-kerala
+- Calicut Regional Edition: https://bcor.in/pharmacy-software-calicut
+- BCOR vs Marg ERP Comparison: https://bcor.in/compare/bcor-vs-marg-erp

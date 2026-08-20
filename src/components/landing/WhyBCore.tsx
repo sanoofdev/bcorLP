@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
     WifiOff,
@@ -9,8 +10,6 @@ import {
     Monitor,
     Smartphone,
 } from "lucide-react";
-
-const LOGO_URL = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/project-uploads/b09dd75c-2ddb-48e4-98d3-aa63dfa4e912/bcoreemplem-1768989187964.png";
 
 const benefits = [
     {
@@ -60,7 +59,7 @@ export function WhyBCore() {
 
                         <p className="text-sm sm:text-base lg:text-lg text-slate-600 mb-8 sm:mb-10 max-w-xl mx-auto lg:mx-0">
                             We understand Indian pharmacy workflows — drug schedules, batch tracking,
-                            expiry management, and compliance requirements. That's all B-Core does.
+                            expiry management, and compliance requirements. That&apos;s all B-Core does.
                         </p>
 
                         <div className="space-y-4 sm:space-y-6">
@@ -101,9 +100,11 @@ export function WhyBCore() {
                             {/* App Header */}
                             <div className="flex items-center justify-between mb-6 sm:mb-8">
                                 <div className="flex items-center gap-2 sm:gap-3">
-                                    <img
-                                        src={`${LOGO_URL}?width=200&height=200&resize=contain&quality=100`}
-                                        alt="Logo"
+                                    <Image
+                                        src="/icon.png"
+                                        alt="BCOR Desktop App Logo"
+                                        width={48}
+                                        height={48}
                                         className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
                                     />
                                     <div>

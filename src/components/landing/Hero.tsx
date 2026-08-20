@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Phone, Play, Shield, Clock, Package } from "lucide-react";
 
@@ -37,10 +38,11 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6"
             >
-              Run Your Pharmacy Faster,{" "}
+              Fast GST{" "}
               <span className="text-teal-600">
-                Serve More. Stress Less.
-              </span>
+                Pharmacy Billing Software
+              </span>{" "}
+              for Indian Medical Shops
             </motion.h1>
 
             {/* Bullet Points */}
@@ -108,9 +110,13 @@ export function Hero() {
 
               {/* ERP Screenshot */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-white">
-                <img
+                <Image
                   src="/erp.png"
-                  alt="BCOR ERP Dashboard"
+                  alt="BCOR Pharmacy ERP Billing and Inventory Software Dashboard"
+                  width={800}
+                  height={500}
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="w-full h-auto"
                 />
               </div>

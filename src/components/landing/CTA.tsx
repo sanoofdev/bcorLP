@@ -1,52 +1,86 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, FileText } from "lucide-react";
+import { Phone, ShieldCheck, Zap, Clock, CheckCircle2 } from "lucide-react";
+import { LeadForm } from "./LeadForm";
 
 export function CTA() {
-    return (
-        <section className="py-16 sm:py-20 lg:py-24 bg-slate-50">
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="bg-teal-600 rounded-xl sm:rounded-2xl lg:rounded-3xl px-5 sm:px-8 lg:px-16 py-10 sm:py-14 lg:py-20 text-center"
-                >
-                    <p className="text-xs sm:text-sm font-semibold text-teal-100 uppercase tracking-wide mb-4 sm:mb-6">
-                        Start Your Journey Today
-                    </p>
+  return (
+    <section id="demo" className="py-16 sm:py-20 lg:py-28 bg-slate-900 text-white relative overflow-hidden">
+      {/* Background Accent Glows */}
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
-                        Ready to Modernize
-                        <br />
-                        Your Pharmacy?
-                    </h2>
-
-                    <p className="text-base sm:text-lg lg:text-xl text-teal-100 mb-8 sm:mb-10 max-w-2xl mx-auto">
-                        Join 100+ pharmacies using B-Core. Get a personalized demo and see why
-                        we're the preferred choice for Indian chemists.
-                    </p>
-
-                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                        <a
-                            href="tel:+917994184506"
-                            className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-white text-teal-700 font-semibold rounded-xl hover:bg-teal-50 transition-colors flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base"
-                        >
-                            <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                            Call Sales Now
-                        </a>
-
-                        <a
-                            href="#"
-                            className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-teal-700 text-white font-semibold rounded-xl hover:bg-teal-800 transition-colors flex items-center justify-center gap-2 sm:gap-3 text-sm sm:text-base"
-                        >
-                            <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
-                            Request Demo
-                        </a>
-                    </div>
-                </motion.div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          {/* Left Column: Value Proposition & Direct Phone */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="lg:col-span-6 text-center lg:text-left"
+          >
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-teal-500/20 border border-teal-500/30 rounded-full text-teal-300 text-xs font-semibold mb-6">
+              <Zap className="w-3.5 h-3.5 text-teal-400" /> Start Your 15-Minute Free Walkthrough
             </div>
-        </section>
-    );
+
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+              Ready to Upgrade Your Pharmacy to{" "}
+              <span className="text-teal-400">BCOR ERP?</span>
+            </h2>
+
+            <p className="text-slate-300 text-base sm:text-lg mb-8 leading-relaxed">
+              Join 100+ pharmacies and medical stores across India. Experience sub-2-second counter billing, automated GST returns, and zero monthly subscription fees.
+            </p>
+
+            {/* Checklist */}
+            <div className="space-y-3.5 mb-8 max-w-lg mx-auto lg:mx-0 text-left">
+              {[
+                "100% Offline capability — never stops during internet cuts",
+                "Automatic Schedule H1, narcotic & inspection registers",
+                "Free data migration from Marg ERP & legacy billing software",
+                "One-time purchase lifetime license (zero monthly rent)",
+              ].map((item, idx) => (
+                <div key={idx} className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-teal-400 shrink-0 mt-0.5" />
+                  <span className="text-sm sm:text-base text-slate-200">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* Direct Phone Call Card */}
+            <div className="p-5 bg-slate-800/80 border border-slate-700 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 max-w-lg mx-auto lg:mx-0">
+              <div>
+                <p className="text-xs text-slate-400 uppercase tracking-wider font-semibold">
+                  Prefer a direct phone conversation?
+                </p>
+                <p className="text-white font-bold text-lg mt-0.5">
+                  Call Senior Sales Specialist
+                </p>
+              </div>
+              <a
+                href="tel:+917994184506"
+                aria-label="Call BCOR sales directly at +91 7994184506"
+                className="px-5 py-2.5 bg-teal-500 hover:bg-teal-600 text-slate-950 font-bold rounded-xl whitespace-nowrap transition flex items-center gap-2 text-sm shadow-sm"
+              >
+                <Phone className="w-4 h-4 text-slate-950" /> +91 7994184506
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Right Column: Lead Form Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="lg:col-span-6"
+          >
+            <LeadForm />
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
 }
