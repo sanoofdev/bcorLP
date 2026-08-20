@@ -81,6 +81,9 @@ const jsonLd = {
       "@type": "SoftwareApplication",
       "@id": "https://bcor.in/#software",
       "name": "BCOR ERP - Pharmacy Billing Software",
+      "url": "https://bcor.in",
+      "softwareVersion": "2.0",
+      "screenshot": "https://bcor.in/erp.png",
       "operatingSystem": "Windows 10, Windows 11",
       "applicationCategory": "BusinessApplication",
       "description": "GST-compliant pharmacy billing and inventory management software for medical stores in India.",
@@ -90,6 +93,13 @@ const jsonLd = {
         "priceCurrency": "INR",
         "availability": "https://schema.org/InStock",
         "description": "One-time purchase lifetime license"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "120",
+        "bestRating": "5",
+        "worstRating": "1"
       },
       "featureList": [
         "GST Invoicing & Filing Reports",
