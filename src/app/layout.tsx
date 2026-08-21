@@ -110,6 +110,44 @@ const jsonLd = {
       ]
     },
     {
+      "@type": "LocalBusiness",
+      "@id": "https://bcor.in/#localbusiness",
+      "name": "BCOR Pharmacy Billing Software",
+      "image": "https://bcor.in/logo.png",
+      "url": "https://bcor.in",
+      "telephone": "+91-7994184506",
+      "priceRange": "₹15,000 - ₹50,000 (one-time lifetime license)",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pharmacy Software Development Center",
+        "addressLocality": "Calicut",
+        "addressRegion": "Kerala",
+        "postalCode": "673001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "11.2588",
+        "longitude": "75.7804"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "10:00",
+          "closes": "18:00"
+        }
+      ],
+      "servesCuisine": "Pharmacy Management Software",
+      "priceCurrency": "INR"
+    },
+    {
       "@type": "Organization",
       "@id": "https://bcor.in/#organization",
       "name": "BCOR ERP",

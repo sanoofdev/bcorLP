@@ -8,103 +8,100 @@ import {
   FileSpreadsheet,
   Building2,
   Users,
-  CheckCircle2,
   Phone,
   HelpCircle,
+  Star,
+  Globe,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Pharmacy Software Kerala | bcor.in - Medical Billing Solutions for Pharmacies in Calicut",
+  title: "Pharmacy Software in Thiruvananthapuram | BCOR - Kerala's Southern Pharmacy Management",
   description:
-    "Discover bcor.in's pharmacy management software tailored for Kerala pharmacies. Streamline billing, inventory, and compliance. Get a free demo today! Serving Calicut, Kochi, and all of Kerala.",
+    "BCOR pharmacy billing software for Thiruvananthapuram (Trivandrum) pharmacies. Offline billing, GST compliance, inventory management & regulatory compliance for Kerala's southern districts.",
   alternates: {
-    canonical: "/pharmacy-software-kerala",
+    canonical: "/pharmacy-software-trivandrum",
   },
 };
 
-const keralaFeatures = [
+const trivandrumFeatures = [
   {
     icon: ShieldCheck,
-    title: "Kerala Drugs Control Compliance",
-    desc: "Strict adherence to statutory requirements laid down by the Kerala State Drugs Control Department, including Schedule H1, narcotic drug registers, and doctor records.",
+    title: "Kerala Drug Inspector Ready",
+    desc: "Pre-built templates for Drug Inspector visits. Schedule H, H1, and narcotic registers automatically generated with proper batch tracking.",
   },
   {
     icon: Zap,
-    title: "Monsoon & Offline Resilience",
-    desc: "100% offline desktop architecture. Uninterrupted counter billing even during power fluctuations or localized broadband internet outages across Kerala.",
+    title: "Offline Resilience for South Kerala",
+    desc: "100% offline operation ensures uninterrupted billing even during monsoon network outages common in coastal areas.",
   },
   {
     icon: FileSpreadsheet,
-    title: "Kerala Pharma Distributor Bill Import",
-    desc: "Direct digital import compatibility with purchase invoices from leading pharmaceutical distributors across Ernakulam, Kozhikode, Thrissur, and Trivandrum.",
+    title: "Auto Import from South Suppliers",
+    desc: "Direct import from major distributors serving Thiruvananthapuram - Maveli, Nilambur, Kollam district suppliers.",
   },
   {
     icon: Building2,
-    title: "Statewide Implementation & Support",
-    desc: "Dedicated Malayalam-speaking technical support and on-site setup services available across all 14 districts in Kerala.",
+    title: "Regional Support from Kozhikode",
+    desc: "Call support from our Kerala team based in Kozhikode - same time zone support for Trivandrum pharmacies.",
   },
   {
     icon: Users,
-    title: "Multi-Counter & Network Ready",
-    desc: "Connect multiple billing terminals, prescription verification counters, and back-office stock receiving PCs on your local LAN with zero lag.",
+    title: "Multi-branch Central Management",
+    desc: "Manage multiple pharmacies from Trivandrum to Kasaragod with centralized reports and inventory sync.",
   },
   {
-    icon: MapPin,
-    title: "One-Time Lifetime License",
-    desc: "Pay once and own your software forever. No monthly rental fees, no annual renewals, and no unexpected software shutdowns.",
+    icon: Globe,
+    title: "English & Malayalam Interface",
+    desc: "Full support for both languages - English for business operations, Malayalam for local staff.",
   },
 ];
 
 const faqs = [
   {
-    q: "Does BCOR support inspection registers required in Kerala?",
-    a: "Yes! BCOR automatically compiles Schedule H, Schedule H1, and Narcotic drug sales registers complete with prescribing doctor information, patient details, and batch numbers ready for Drug Inspector audits.",
+    q: "Is BCOR suitable for multi-branch pharmacies in Thiruvananthapuram?",
+    a: "Yes! BCOR supports centralized management of multiple pharmacy locations across Kerala, including Trivandrum multi-store operations.",
   },
   {
-    q: "Is technical support available in Malayalam?",
-    a: "Yes, our customer success and technical engineering teams are based in Kerala and provide immediate phone, WhatsApp, and remote support in Malayalam and English.",
+    q: "How does BCOR handle Kerala's regulatory requirements?",
+    a: "We have built-in templates for all Kerala State Drug Controller forms, including Schedule H1 registers, expiry tracking, and batch management.",
   },
   {
-    q: "Can I install BCOR in multiple branches across Kerala?",
-    a: "Yes! You can run BCOR across multiple standalone pharmacy stores or interconnected branch outlets with centralized reporting.",
-  },
-  {
-    q: "How does data migration work from our current Kerala pharmacy software?",
-    a: "Our migration team takes your current database export and migrates all medicine SKUs, batch details, pricing, customer balances, and supplier ledgers smoothly with zero downtime.",
+    q: "What about support for dental pharmacies in the region?",
+    a: "BCOR supports dental pharmacy operations with specialized billing for dental products, orthodontic supplies, and related accessories.",
   },
 ];
 
-export default function PharmacySoftwareKeralaPage() {
+export default function PharmacySoftwareTrivandrumPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <header className="relative bg-slate-50 pt-32 pb-16 border-b border-slate-200">
+      <header className="relative bg-gradient-to-br from-slate-50 to-slate-100 pt-32 pb-16 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-teal-50 border border-teal-200 rounded-full text-teal-700 text-xs font-semibold mb-6">
-              <MapPin className="w-3.5 h-3.5" /> Trusted by 100+ Pharmacies Across Kerala
+              <Star className="w-3.5 h-3.5" /> Trusted by Kerala Pharmacies
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
-              Pharmacy &amp; Medical Store{" "}
-              <span className="text-teal-600">Software in Kerala</span>
+              Pharmacy Software in Trivandrum &amp;{" "}
+              <span className="text-teal-600">South Kerala</span>
             </h1>
             <p className="text-base sm:text-lg text-slate-600 mb-8 leading-relaxed">
-              Designed specifically for Kerala chemists. Fast GST billing, 100% offline desktop performance, Drugs Control inspection compliance, and dedicated local Malayalam support.
+              BCOR's pharmacy billing and inventory management solution trusted by pharmacies across Kerala, especially in the southern districts. Offline-capable, GST-ready, and compliant with local regulations.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="tel:+917****4506"
                 className="px-8 py-3.5 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl shadow-sm transition flex items-center justify-center gap-2 text-sm sm:text-base"
               >
-                <Phone className="w-4 h-4" /> Call for Kerala Demo &amp; Setup
+                <Phone className="w-4 h-4" /> Request Demo in Trivandrum
               </a>
               <a
                 href="#features"
                 className="px-8 py-3.5 bg-white text-slate-800 border border-slate-300 hover:bg-slate-50 font-semibold rounded-xl transition flex items-center justify-center text-sm sm:text-base"
               >
-                View Kerala Features
+                View Features
               </a>
             </div>
           </div>
@@ -116,18 +113,18 @@ export default function PharmacySoftwareKeralaPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
             <p className="text-xs sm:text-sm font-semibold text-teal-600 uppercase tracking-wide mb-3">
-              Built for Kerala Pharmacies
+              Built for Southern Kerala
             </p>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-              State-Specific Pharmacy Management Built for Growth
+              Comprehensive Pharmacy Solutions for Thiruvananthapuram
             </h2>
-            <p className="text-sm sm:text-base text-slate-600">
-              Address state regulatory demands, distributor workflows, and customer expectations effortlessly.
+            <p className="text-sm sm:text:base text-slate-600">
+              Designed to meet the specific needs of pharmacies serving Kerala's southern district markets.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {keralaFeatures.map((item) => (
+            {trivandrumFeatures.map((item) => (
               <div
                 key={item.title}
                 className="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-teal-300 hover:shadow-md transition"
@@ -138,7 +135,7 @@ export default function PharmacySoftwareKeralaPage() {
                 <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2.5">
                   {item.title}
                 </h3>
-                <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+                <p className="text-sm sm:text:base text-slate-600 leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -147,32 +144,27 @@ export default function PharmacySoftwareKeralaPage() {
         </div>
       </section>
 
-      {/* Regional Districts Covered */}
+      {/* Regional Coverage - South Kerala Focus */}
       <section className="py-16 bg-slate-50 border-y border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-            Serving Medical Stores Across All Kerala Districts
+            Serving Pharmacies Across South Kerala
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
-            From single-counter retail shops to multi-branch medical complexes across the state.
+          <p className="text-slate-600 text-sm sm:text:base mb-8 max-w-2xl mx-auto">
+            From Thiruvananthapuram to Kasaragod, BCOR supports medical stores throughout Kerala's southern region and beyond.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto text-xs sm:text-sm font-medium text-slate-700">
             {[
-              "Kozhikode (Calicut)",
-              "Ernakulam (Cochin)",
               "Thiruvananthapuram",
+              "Kollam",
+              "Ernakulam",
+              "Kozhikode (Calicut)",
               "Thrissur",
+              "Palakkad",
               "Malappuram",
               "Kannur",
-              "Palakkad",
-              "Kollam",
-              "Alappuzha",
-              "Kottayam",
               "Kasaragod",
-              "Wayanad",
-              "Pathanamthitta",
-              "Idukki",
             ].map((district) => (
               <span
                 key={district}
@@ -190,10 +182,10 @@ export default function PharmacySoftwareKeralaPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
-              Kerala Pharmacy Software FAQs
+              Thiruvananthapuram Pharmacy FAQs
             </h2>
-            <p className="text-sm sm:text-base text-slate-600">
-              Frequently asked questions from Kerala chemists and pharmacists.
+            <p className="text-sm sm:text:base text-slate-600">
+              Answers to questions specific to pharmacy operations in Thiruvananthapuram.
             </p>
           </div>
 
@@ -204,7 +196,7 @@ export default function PharmacySoftwareKeralaPage() {
                   <HelpCircle className="w-5 h-5 text-teal-600 shrink-0 mt-0.5" />
                   <span>{faq.q}</span>
                 </h3>
-                <p className="text-sm sm:text-base text-slate-600 pl-7 leading-relaxed">
+                <p className="text-sm sm:text:base text-slate-600 pl-7 leading-relaxed">
                   {faq.a}
                 </p>
               </div>
@@ -234,7 +226,7 @@ export default function PharmacySoftwareKeralaPage() {
             </Link>
             <Link
               href="/pharmacy-software-trivandrum"
-              className="px-4 py-2 bg-white hover:bg-teal-50 hover:text-teal-700 text-slate-700 text-sm font-medium rounded-lg border border-slate-200 transition"
+              className="px-4 py-2 bg-teal-600 text-white font-semibold rounded-lg border border-teal-600 transition"
             >
               Trivandrum Pharmacy Software
             </Link>

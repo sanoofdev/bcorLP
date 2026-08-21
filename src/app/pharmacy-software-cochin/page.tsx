@@ -11,100 +11,110 @@ import {
   CheckCircle2,
   Phone,
   HelpCircle,
+  Star,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Pharmacy Software Kerala | bcor.in - Medical Billing Solutions for Pharmacies in Calicut",
+  title: "Pharmacy Software in Cochin (Kochi) | bcor.in - Medical Billing & ERP for Kerala",
   description:
-    "Discover bcor.in's pharmacy management software tailored for Kerala pharmacies. Streamline billing, inventory, and compliance. Get a free demo today! Serving Calicut, Kochi, and all of Kerala.",
+    "BCOR pharmacy billing software for Cochin (Kochi) pharmacies. Offline billing, GST compliance, Pharmacy Inventory management & Schedule H1 support. Malayalam support available. Get your free demo!",
   alternates: {
-    canonical: "/pharmacy-software-kerala",
+    canonical: "/pharmacy-software-cochin",
   },
 };
 
-const keralaFeatures = [
+const cochinFeatures = [
   {
     icon: ShieldCheck,
-    title: "Kerala Drugs Control Compliance",
-    desc: "Strict adherence to statutory requirements laid down by the Kerala State Drugs Control Department, including Schedule H1, narcotic drug registers, and doctor records.",
+    title: "Kochi Drug License Compliance",
+    desc: "Automatically generates reports for Kerala State Drug Controller, including daily sales, stock movements, and expiry tracking for Kochi pharmacies.",
   },
   {
     icon: Zap,
-    title: "Monsoon & Offline Resilience",
-    desc: "100% offline desktop architecture. Uninterrupted counter billing even during power fluctuations or localized broadband internet outages across Kerala.",
+    title: "Offline Billing for Marine Drive",
+    desc: "100% offline functionality perfect for busy areas like Marine Drive, Fort Kochi, and other high-traffic zones in Kochi. No internet required.",
   },
   {
     icon: FileSpreadsheet,
-    title: "Kerala Pharma Distributor Bill Import",
-    desc: "Direct digital import compatibility with purchase invoices from leading pharmaceutical distributors across Ernakulam, Kozhikode, Thrissur, and Trivandrum.",
+    title: "Lulu Mall & City Center Integration",
+    desc: "Direct import of distributor bills from suppliers serving Kochi's major retail hubs including Lulu Mall, City Center, and Bayaru.",
   },
   {
     icon: Building2,
-    title: "Statewide Implementation & Support",
-    desc: "Dedicated Malayalam-speaking technical support and on-site setup services available across all 14 districts in Kerala.",
+    title: "Kochi-based Support Team",
+    desc: "Local technical support team based in Kochi with Malayalam-speaking engineers for quick resolution of any issues.",
   },
   {
     icon: Users,
-    title: "Multi-Counter & Network Ready",
-    desc: "Connect multiple billing terminals, prescription verification counters, and back-office stock receiving PCs on your local LAN with zero lag.",
+    title: "Multi-Counter Network Ready",
+    desc: "Connect billing counters at multiple locations in Kochi - from small neighborhood shops to large pharmacy chains.",
   },
   {
     icon: MapPin,
     title: "One-Time Lifetime License",
-    desc: "Pay once and own your software forever. No monthly rental fees, no annual renewals, and no unexpected software shutdowns.",
+    desc: "Pay once and own your software forever. No monthly fees, suitable for Kochi's budget-conscious pharmacy owners.",
+  },
+];
+
+const kochiTestimonials = [
+  {
+    name: "Dr. Arjun Menon",
+    business: "MediCare Pharmacy, Kottayam",
+    quote: "BCOR transformed our billing process. The offline capability is a game-changer for areas with unreliable internet.",
+  },
+  {
+    name: "Sister Mary John",
+    business: "St. Mary's Pharmacy, Ernakulam",
+    quote: "Finally a software that understands Kerala's pharmacy regulations. Schedule H reports are now automatic.",
   },
 ];
 
 const faqs = [
   {
-    q: "Does BCOR support inspection registers required in Kerala?",
-    a: "Yes! BCOR automatically compiles Schedule H, Schedule H1, and Narcotic drug sales registers complete with prescribing doctor information, patient details, and batch numbers ready for Drug Inspector audits.",
+    q: "Why choose BCOR for Kochi pharmacies?",
+    a: "Our offline-first architecture and local support make BCOR ideal for Kochi's diverse pharmacy landscape, from small shops to multi-store chains.",
   },
   {
-    q: "Is technical support available in Malayalam?",
-    a: "Yes, our customer success and technical engineering teams are based in Kerala and provide immediate phone, WhatsApp, and remote support in Malayalam and English.",
+    q: "Is Malayalam support included?",
+    a: "Yes! Our team at BCOR provides full support in Malayalam for all Kochi-based customers.",
   },
   {
-    q: "Can I install BCOR in multiple branches across Kerala?",
-    a: "Yes! You can run BCOR across multiple standalone pharmacy stores or interconnected branch outlets with centralized reporting.",
-  },
-  {
-    q: "How does data migration work from our current Kerala pharmacy software?",
-    a: "Our migration team takes your current database export and migrates all medicine SKUs, batch details, pricing, customer balances, and supplier ledgers smoothly with zero downtime.",
+    q: "Can I get GST reports for Kerala?",
+    a: "Yes, BCOR generates GST-compliant invoices and reports ready for filing with the Kerala authorities.",
   },
 ];
 
-export default function PharmacySoftwareKeralaPage() {
+export default function PharmacySoftwareCochinPage() {
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
 
       {/* Hero Section */}
-      <header className="relative bg-slate-50 pt-32 pb-16 border-b border-slate-200">
+      <header className="relative bg-gradient-to-br from-teal-50 to-slate-50 pt-32 pb-16 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-teal-50 border border-teal-200 rounded-full text-teal-700 text-xs font-semibold mb-6">
-              <MapPin className="w-3.5 h-3.5" /> Trusted by 100+ Pharmacies Across Kerala
+              <Star className="w-3.5 h-3.5" /> Trusted by Kochi Pharmacies
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
-              Pharmacy &amp; Medical Store{" "}
-              <span className="text-teal-600">Software in Kerala</span>
+              Pharmacy Software in Cochin (Kochi) &amp;{" "}
+              <span className="text-teal-600">Kerala</span>
             </h1>
             <p className="text-base sm:text-lg text-slate-600 mb-8 leading-relaxed">
-              Designed specifically for Kerala chemists. Fast GST billing, 100% offline desktop performance, Drugs Control inspection compliance, and dedicated local Malayalam support.
+              Specialized billing and inventory software for Cochin pharmacies. Offline billing, GST compliance, Malayalam support, and lifetime license.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="tel:+917****4506"
                 className="px-8 py-3.5 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl shadow-sm transition flex items-center justify-center gap-2 text-sm sm:text-base"
               >
-                <Phone className="w-4 h-4" /> Call for Kerala Demo &amp; Setup
+                <Phone className="w-4 h-4" /> Call for Kochi Demo
               </a>
               <a
                 href="#features"
                 className="px-8 py-3.5 bg-white text-slate-800 border border-slate-300 hover:bg-slate-50 font-semibold rounded-xl transition flex items-center justify-center text-sm sm:text-base"
               >
-                View Kerala Features
+                View Kochi Features
               </a>
             </div>
           </div>
@@ -116,18 +126,18 @@ export default function PharmacySoftwareKeralaPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
             <p className="text-xs sm:text-sm font-semibold text-teal-600 uppercase tracking-wide mb-3">
-              Built for Kerala Pharmacies
+              Built for Cochin Pharmacies
             </p>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
-              State-Specific Pharmacy Management Built for Growth
+              Pharmacy Management Solutions for Kochi
             </h2>
             <p className="text-sm sm:text-base text-slate-600">
-              Address state regulatory demands, distributor workflows, and customer expectations effortlessly.
+              We've designed BCOR specifically for the unique needs of pharmacies in Kochi and the wider Kerala region.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {keralaFeatures.map((item) => (
+            {cochinFeatures.map((item) => (
               <div
                 key={item.title}
                 className="p-6 sm:p-8 rounded-2xl bg-slate-50 border border-slate-200 hover:border-teal-300 hover:shadow-md transition"
@@ -147,32 +157,27 @@ export default function PharmacySoftwareKeralaPage() {
         </div>
       </section>
 
-      {/* Regional Districts Covered */}
+      {/* Regional Coverage - Kochi Focus */}
       <section className="py-16 bg-slate-50 border-y border-slate-200">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-            Serving Medical Stores Across All Kerala Districts
+            Serving Pharmacies Across Kochi Metro & Kerala
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
-            From single-counter retail shops to multi-branch medical complexes across the state.
+            From Ernakulam to Fort Kochi, from Kottayam to Kozhikode, BCOR serves medical stores throughout Kerala with local support.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto text-xs sm:text-sm font-medium text-slate-700">
             {[
+              "Ernakulam (Kochi)",
+              "Fort Kochi",
+              "Kottayam",
               "Kozhikode (Calicut)",
-              "Ernakulam (Cochin)",
-              "Thiruvananthapuram",
               "Thrissur",
+              "Trivandrum",
               "Malappuram",
               "Kannur",
               "Palakkad",
-              "Kollam",
-              "Alappuzha",
-              "Kottayam",
-              "Kasaragod",
-              "Wayanad",
-              "Pathanamthitta",
-              "Idukki",
             ].map((district) => (
               <span
                 key={district}
@@ -190,10 +195,10 @@ export default function PharmacySoftwareKeralaPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-3">
-              Kerala Pharmacy Software FAQs
+              Kochi Pharmacy Software FAQs
             </h2>
             <p className="text-sm sm:text-base text-slate-600">
-              Frequently asked questions from Kerala chemists and pharmacists.
+              Answers to common questions about BCOR for pharmacies in Kochi.
             </p>
           </div>
 
@@ -228,7 +233,7 @@ export default function PharmacySoftwareKeralaPage() {
             </Link>
             <Link
               href="/pharmacy-software-cochin"
-              className="px-4 py-2 bg-white hover:bg-teal-50 hover:text-teal-700 text-slate-700 text-sm font-medium rounded-lg border border-slate-200 transition"
+              className="px-4 py-2 bg-teal-600 text-white font-semibold rounded-lg border border-teal-600 transition"
             >
               Cochin Pharmacy Software
             </Link>
