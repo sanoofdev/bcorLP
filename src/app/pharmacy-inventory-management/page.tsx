@@ -14,9 +14,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Pharmacy Inventory Management Software India | Expiry & Stock Control - BCOR",
+  title: "Pharmacy Inventory Management Software | bcor.in - Kerala's Leading Pharmacy Tech Solution",
   description:
-    "Control medicine stock, eliminate expiry losses with automatic FEFO batch tracking, and automate supplier reordering with BCOR Pharmacy Inventory Software.",
+    "Take control of your pharmacy inventory with bcor.in's intelligent stock management system. Reduce waste, prevent stockouts, and improve profitability. Kerala-based support. Learn more!",
   alternates: {
     canonical: "/pharmacy-inventory-management",
   },
