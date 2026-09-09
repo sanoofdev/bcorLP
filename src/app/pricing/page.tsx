@@ -197,12 +197,6 @@ export default function PricingPage() {
             >
               Medical Shop POS
             </Link>
-            <Link
-              href="/compare/bcor-vs-marg-erp"
-              className="px-4 py-2 bg-white hover:bg-teal-50 hover:text-teal-700 text-slate-700 text-sm font-medium rounded-lg border border-slate-200 transition"
-            >
-              BCOR vs Marg ERP
-            </Link>
           </div>
         </div>
       </section>

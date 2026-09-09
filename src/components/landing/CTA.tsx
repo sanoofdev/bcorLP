@@ -39,7 +39,7 @@ export function CTA() {
               {[
                 "100% Offline capability — never stops during internet cuts",
                 "Automatic Schedule H1, narcotic & inspection registers",
-                "Free data migration from Marg ERP & legacy billing software",
+                "Free data migration from legacy billing software",
                 "One-time purchase lifetime license (zero monthly rent)",
               ].map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3">

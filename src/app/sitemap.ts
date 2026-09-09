@@ -11,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/medical-shop-billing-software", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/pharmacy-software-kerala", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/pharmacy-software-calicut", priority: 0.8, changeFrequency: "monthly" as const },
-    { path: "/compare/bcor-vs-marg-erp", priority: 0.8, changeFrequency: "monthly" as const },
   ];
 
   return routes.map((route) => ({
