@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, MapPin, Mail } from "lucide-react";
+import { Phone, MapPin, Mail, Linkedin } from "lucide-react";
 
 const productLinks = [
   { name: "Features", href: "#features" },
@@ -110,6 +110,31 @@ export function Footer() {
               ))}
             </ul>
           </div>
+        </div>
+
+        {/* Founder */}
+        <div className="py-6 sm:py-8 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <p className="text-teal-400 text-xs font-semibold uppercase tracking-wider mb-1">
+              Founder, BCOR Innovation
+            </p>
+            <p className="text-white font-semibold text-base sm:text-lg">
+              MUHAMMED AZAD RAHMAN
+            </p>
+            <p className="text-slate-400 text-xs sm:text-sm mt-1">
+              Technology Leadership · ERP &amp; Digital Transformation · Kozhikode, Kerala
+            </p>
+          </div>
+          <a
+            href="https://www.linkedin.com/in/azadkrahman"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Muhammed Azad Rahman on LinkedIn"
+            className="inline-flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white transition-colors"
+          >
+            <Linkedin className="w-4 h-4 text-teal-400" />
+            LinkedIn Profile
+          </a>
         </div>
 
         {/* Bottom Bar */}
