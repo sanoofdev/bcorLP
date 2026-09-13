@@ -14,8 +14,8 @@
 * **Tagline:** *"Run Your Pharmacy Faster, Serve More. Stress Less."*
 * **Core Value Proposition:** Fast, reliable, 100% offline-capable pharmacy management software built exclusively for Indian chemists with built-in GST compliance, Schedule H1 drug register tracking, and a **one-time lifetime license** (zero monthly or yearly subscription fees).
 * **Official Contact:**
-  * **Primary Sales & Support:** `+91 7994184506` / `+91 9847434096`
-  * **Email:** `support@bcor.in`
+  * **Primary Sales & Support:** `+91 9847434096`
+  * **Email:** `bcor.sales@gmail.com`
   * **Location:** India (Specialized presence in Kerala & Malabar Region)
 
 ### 1.2 Key Differentiators vs Generic POS
@@ -138,7 +138,7 @@ Every production page should deliver structured data with:
 
 ## 6. Landing Page Component Inventory
 
-* **[`Navbar.tsx`](file:///src/components/landing/Navbar.tsx):** Sticky/floating navigation with branded emblem, desktop navigation anchors, phone CTA (`+91 7994184506`), and mobile hamburger drawer.
+* **[`Navbar.tsx`](file:///src/components/landing/Navbar.tsx):** Sticky/floating navigation with branded emblem, desktop navigation anchors, phone CTA (`+91 9847434096`), and mobile hamburger drawer.
 * **[`Hero.tsx`](file:///src/components/landing/Hero.tsx):** Trust badge (*"Used by 100+ pharmacies across India"*), main value proposition, primary call-to-action buttons, and high-fidelity desktop ERP dashboard preview.
 * **[`Features.tsx`](file:///src/components/landing/Features.tsx):** 6 key pharmacy workflows (Lightning-Fast Billing, Expiry & Batch Tracking, Drug & Schedule H1, Reports, Multi-User, Offline-First).
 * **[`Compliance.tsx`](file:///src/components/landing/Compliance.tsx):** Detailed regulatory compliance breakdown (Inspection-ready logs, tamper-resistant registers, local data control).

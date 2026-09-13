@@ -1,4 +1,7 @@
 import { MetadataRoute } from "next";
+import { keralaDistricts } from "@/lib/kerala-districts";
+
+export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://bcor.in";
@@ -11,9 +14,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/medical-shop-billing-software", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/pharmacy-software-kerala", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/pharmacy-software-calicut", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/pharmacy-software-cochin", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/pharmacy-software-trivandrum", priority: 0.8, changeFrequency: "monthly" as const },
   ];
 
-  return routes.map((route) => ({
+  const districtRoutes = keralaDistricts.map((district) => ({
+    path: `/pharmacy-software-kerala/${district.slug}`,
+    priority: 0.75,
+    changeFrequency: "monthly" as const,
+  }));
+
+  return [...routes, ...districtRoutes].map((route) => ({
     url: `${baseUrl}${route.path}`,
     lastModified: new Date(),
     changeFrequency: route.changeFrequency,

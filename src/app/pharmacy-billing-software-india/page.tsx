@@ -94,7 +94,7 @@ export default function PharmacyBillingSoftwareIndiaPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="tel:+917994184506"
+              href="tel:+919847434096"
               className="px-8 py-3.5 bg-teal-500 hover:bg-teal-600 text-slate-950 font-bold rounded-xl shadow-sm transition flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               <Phone className="w-4 h-4 text-slate-950" /> Call for Free Nationwide Demo
@@ -242,10 +242,10 @@ export default function PharmacyBillingSoftwareIndiaPage() {
                 </p>
               </div>
               <a
-                href="tel:+917994184506"
+                href="tel:+919847434096"
                 className="inline-flex items-center gap-2 mt-4 font-bold text-teal-700 hover:text-teal-800 text-sm"
               >
-                <Phone className="w-4 h-4" /> Call +91 7994184506
+                <Phone className="w-4 h-4" /> Call +91 9847434096
               </a>
             </div>
           </div>

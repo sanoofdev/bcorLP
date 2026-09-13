@@ -1,13 +1,13 @@
 "use client";
 
 import { MessageCircle } from "lucide-react";
+import { callbackUrl } from "@/lib/sales-contact";
 
 export function WhatsAppButton() {
-  const whatsappUrl =
-    "https://wa.me/917994184506?text=Hi%20BCOR%20ERP%2C%20I%20am%20interested%20in%20a%20free%20demo%20for%20my%20pharmacy.";
+  const whatsappUrl = callbackUrl;
 
   return (
-    <div className="fixed bottom-20 lg:bottom-6 right-6 z-40 group">
+    <div className="hidden lg:block fixed bottom-6 right-6 z-40 group">
       {/* Tooltip on desktop */}
       <div className="hidden lg:block absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-slate-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
         Chat on WhatsApp

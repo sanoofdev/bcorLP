@@ -92,7 +92,7 @@ export default function PharmacySoftwareTrivandrumPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="tel:+917****4506"
+                href="tel:+919847434096"
                 className="px-8 py-3.5 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl shadow-sm transition flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 <Phone className="w-4 h-4" /> Request Demo in Trivandrum

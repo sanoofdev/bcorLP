@@ -150,12 +150,12 @@ export function Pricing() {
                             {/* CTAs */}
                             <div className="space-y-3">
                                 <a
-                                    href="tel:+917994184506"
+                                    href="tel:+919847434096"
                                     aria-label="Call sales to understand licensing details"
                                     className="w-full py-3.5 sm:py-4 bg-teal-600 text-white font-semibold rounded-xl hover:bg-teal-700 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
                                 >
                                     <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                                    Call to Understand Licensing (+91 7994184506)
+                                    Call to Understand Licensing (+91 9847434096)
                                 </a>
                                 <a
                                     href="#features"

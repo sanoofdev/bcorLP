@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar, CTA, Footer } from "@/components/landing";
+import { KeralaCoverage } from "@/components/landing/KeralaCoverage";
 import {
   MapPin,
   ShieldCheck,
@@ -8,15 +9,14 @@ import {
   FileSpreadsheet,
   Building2,
   Users,
-  CheckCircle2,
   Phone,
   HelpCircle,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Pharmacy Software Kerala | bcor.in - Medical Billing Solutions for Pharmacies in Calicut",
+  title: "Pharmacy Software Kerala | District-Wise Medical Shop Billing - BCOR",
   description:
-    "Discover bcor.in's pharmacy management software tailored for Kerala pharmacies. Streamline billing, inventory, and compliance. Get a free demo today! Serving Calicut, Kochi, and all of Kerala.",
+    "BCOR pharmacy software for all Kerala districts. GST billing, inventory, expiry tracking, Schedule H1 registers, offline billing, and Malayalam support for medical shops.",
   alternates: {
     canonical: "/pharmacy-software-kerala",
   },
@@ -76,7 +76,7 @@ const faqs = [
 
 export default function PharmacySoftwareKeralaPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white pb-24 lg:pb-0">
       <Navbar />
 
       {/* Hero Section */}
@@ -84,32 +84,34 @@ export default function PharmacySoftwareKeralaPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-teal-50 border border-teal-200 rounded-full text-teal-700 text-xs font-semibold mb-6">
-              <MapPin className="w-3.5 h-3.5" /> Trusted by 100+ Pharmacies Across Kerala
+              <MapPin className="w-3.5 h-3.5" /> Pharmacy software across Kerala
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight mb-6">
-              Pharmacy &amp; Medical Store{" "}
-              <span className="text-teal-600">Software in Kerala</span>
+              BCOR Pharmacy Software{" "}
+              <span className="text-teal-600">in Kerala</span>
             </h1>
             <p className="text-base sm:text-lg text-slate-600 mb-8 leading-relaxed">
               Designed specifically for Kerala chemists. Fast GST billing, 100% offline desktop performance, Drugs Control inspection compliance, and dedicated local Malayalam support.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="tel:+917****4506"
+                href="tel:+919847434096"
                 className="px-8 py-3.5 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl shadow-sm transition flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 <Phone className="w-4 h-4" /> Call for Kerala Demo &amp; Setup
               </a>
               <a
-                href="#features"
+                href="#districts"
                 className="px-8 py-3.5 bg-white text-slate-800 border border-slate-300 hover:bg-slate-50 font-semibold rounded-xl transition flex items-center justify-center text-sm sm:text-base"
               >
-                View Kerala Features
+                Find Your District
               </a>
             </div>
           </div>
         </div>
       </header>
+
+      <KeralaCoverage />
 
       {/* Features Grid */}
       <section id="features" className="py-16 sm:py-20 lg:py-24 bg-white">
@@ -142,44 +144,6 @@ export default function PharmacySoftwareKeralaPage() {
                   {item.desc}
                 </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Regional Districts Covered */}
-      <section className="py-16 bg-slate-50 border-y border-slate-200">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">
-            Serving Medical Stores Across All Kerala Districts
-          </h2>
-          <p className="text-slate-600 text-sm sm:text-base mb-8 max-w-2xl mx-auto">
-            From single-counter retail shops to multi-branch medical complexes across the state.
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto text-xs sm:text-sm font-medium text-slate-700">
-            {[
-              "Kozhikode (Calicut)",
-              "Ernakulam (Cochin)",
-              "Thiruvananthapuram",
-              "Thrissur",
-              "Malappuram",
-              "Kannur",
-              "Palakkad",
-              "Kollam",
-              "Alappuzha",
-              "Kottayam",
-              "Kasaragod",
-              "Wayanad",
-              "Pathanamthitta",
-              "Idukki",
-            ].map((district) => (
-              <span
-                key={district}
-                className="px-3.5 py-1.5 bg-white border border-slate-200 rounded-full shadow-2xs"
-              >
-                📍 {district}
-              </span>
             ))}
           </div>
         </div>

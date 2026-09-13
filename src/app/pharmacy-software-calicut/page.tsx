@@ -96,7 +96,7 @@ export default function CalicutPharmacyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="tel:+917994184506"
+                href="tel:+919847434096"
                 className="px-8 py-3.5 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-xl shadow-sm transition flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 <Phone className="w-4 h-4" /> Call for Calicut On-Site Demo
@@ -160,10 +160,10 @@ export default function CalicutPharmacyPage() {
             </p>
           </div>
           <a
-            href="tel:+917994184506"
+            href="tel:+919847434096"
             className="px-6 py-3 bg-white text-teal-700 hover:bg-teal-50 font-bold rounded-xl whitespace-nowrap transition flex items-center gap-2"
           >
-            <Phone className="w-4 h-4" /> +91 7994184506
+            <Phone className="w-4 h-4" /> +91 9847434096
           </a>
         </div>
       </section>
