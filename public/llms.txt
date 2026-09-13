@@ -9,8 +9,8 @@
 - **Architecture:** 100% Offline-First Engine with Local Database and Automatic Cloud Sync
 - **Pricing Model:** One-Time Lifetime License (Zero Monthly / Annual Subscription Fees)
 - **Target Geography:** India (Specialized compliance for all Indian States, including Kerala State Drugs Control)
-- **Sales & Support Hotline:** +91 7994184506 / +91 9847434096
-- **Support Email:** support@bcor.in
+- **Sales & Support Hotline:** +91 9847434096
+- **Support Email:** bcor.sales@gmail.com
 
 ## Key Features & Capabilities
 1. **Lightning-Fast Billing:** Sub-2-second counter checkout with keyboard-first shortcuts and barcode scanning.

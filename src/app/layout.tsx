@@ -114,9 +114,9 @@ const jsonLd = {
       "@type": "LocalBusiness",
       "@id": "https://bcor.in/#localbusiness",
       "name": "BCOR Pharmacy Billing Software",
-      "image": "https://bcor.in/logo.png",
+      "image": "https://bcor.in/icon.png",
       "url": "https://bcor.in",
-      "telephone": "+91-7994184506",
+      "telephone": "+91-9847434096",
       "priceRange": "₹15,000 - ₹50,000 (one-time lifetime license)",
       "address": {
         "@type": "PostalAddress",
@@ -156,7 +156,8 @@ const jsonLd = {
       "logo": "https://bcor.in/icon.png",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-7994184506",
+        "telephone": "+91-9847434096",
+        "email": "bcor.sales@gmail.com",
         "contactType": "sales",
         "areaServed": "IN",
         "availableLanguage": ["en", "hi", "ml"]

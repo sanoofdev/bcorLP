@@ -5,10 +5,10 @@ import Link from "next/link";
 import { Phone, MapPin, Mail, Linkedin } from "lucide-react";
 
 const productLinks = [
-  { name: "Features", href: "#features" },
-  { name: "Compliance", href: "#compliance" },
-  { name: "Pricing", href: "#pricing" },
-  { name: "Why B-Core", href: "#why-bcore" },
+  { name: "Features", href: "/#features" },
+  { name: "Compliance", href: "/#compliance" },
+  { name: "Pricing", href: "/#pricing" },
+  { name: "Kerala Districts", href: "/pharmacy-software-kerala#districts" },
 ];
 
 const solutionLinks = [
@@ -49,20 +49,20 @@ export function Footer() {
             </p>
             <div className="flex flex-col gap-2 sm:gap-3">
               <a
-                href="tel:+917994184506"
-                aria-label="Call BCOR sales and support at +91 7994184506"
+                href="tel:+919847434096"
+                aria-label="Call BCOR sales and support at +91 9847434096"
                 className="flex items-center gap-2 sm:gap-3 text-slate-400 hover:text-white transition-colors text-sm sm:text-base"
               >
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-teal-500" />
-                <span>+91 7994184506</span>
+                <span>+91 9847434096</span>
               </a>
               <a
-                href="mailto:support@bcor.in"
-                aria-label="Email BCOR support at support@bcor.in"
+                href="mailto:bcor.sales@gmail.com"
+                aria-label="Email BCOR support at bcor.sales@gmail.com"
                 className="flex items-center gap-2 sm:gap-3 text-slate-400 hover:text-white transition-colors text-sm sm:text-base"
               >
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-teal-500" />
-                <span>support@bcor.in</span>
+                <span>bcor.sales@gmail.com</span>
               </a>
               <div className="flex items-center gap-2 sm:gap-3 text-slate-400 text-sm sm:text-base">
                 <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-teal-500" />

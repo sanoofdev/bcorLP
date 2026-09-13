@@ -79,7 +79,7 @@ export function Hero() {
               className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start"
             >
               <a
-                href="tel:+917994184506"
+                href="tel:+919847434096"
                 className="px-6 py-3 bg-teal-600 text-white font-semibold rounded-xl hover:bg-teal-700 transition flex items-center justify-center gap-2 text-sm"
               >
                 <Phone className="w-4 h-4" />
